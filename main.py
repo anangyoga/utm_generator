@@ -9,9 +9,9 @@ st.write("This tool allows you to easily add campaign parameters to URLs so you 
 
 utm_url = st.text_input("Website URL* *(required)*")
 utm_id = st.text_input("Campaign ID")
-utm_src = st.text_input("Campaign Source* *(required)*")
-utm_medium = st.text_input("Campaign Medium* *(required)*")
-utm_name = st.text_input("Campaign Name* *(required)*")
+utm_src = st.selectbox("Campaign Source* *(required)*", ("facebook", "instagram", "twitter", "newsletter","tiktok"))
+utm_medium = st.selectbox("Campaign Medium* *(required)*", ("social_media", "email", "push_notification", "website", "fb_ads", "google_ads", "tiktok_ads"))
+utm_name = st.selectbox("Campaign Name* *(required)*", ("organic", "paid"))
 utm_term = st.text_input("Campaign Term")
 utm_content = st.text_input("Campaign Content")
 
