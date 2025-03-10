@@ -1,3 +1,3 @@
-id,title,url
-1,YouTube,https://www.youtube.com/watch?v=7qGH1VTUJXs&t=546s?utm_source=facebook&utm_medium=social_media&utm_campaign=organic
-2,WhatsApp Link,https://web.whatsapp.com/?utm_source=facebook&utm_medium=social_media&utm_campaign=organic 
+title,url
+YouTube,https://www.youtube.com/watch?v=7qGH1VTUJXs&t=546s?utm_source=facebook&utm_medium=social_media&utm_campaign=organic
+Local Host,http://localhost:8501/?utm_source=newsletter&utm_medium=push_notification&utm_campaign=organic

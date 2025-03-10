@@ -37,14 +37,9 @@ with open("data.csv") as file:
       if utm_url and filtered_params:
         utm_query = "&".join([f"{k}={v}" for k, v in filtered_params.items()])
         final_url = f"{utm_url}?{utm_query}"
-        st.write(final_url)
-
-        add_to_csv = st.button("Add to Database")
-
-        if add_to_csv:
-          new_data = pd.DataFrame([[utm_title, final_url]], columns=["title", "url"])
-          csv = pd.concat([csv, new_data], ignore_index=True)
-          csv.to_csv("data.csv", index=False)
-          st.rerun()
+        new_data = pd.DataFrame([[utm_title, final_url]], columns=["title", "url"])
+        csv = pd.concat([csv, new_data], ignore_index=True)
+        csv.to_csv("data.csv", index=False)
+        st.rerun()
        
 
